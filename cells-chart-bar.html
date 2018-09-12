@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="cells-chart-bar-styles.html">
+<script src="../chart.js/dist/Chart.bundle.js"></script>
+
+<!--
+`<cells-chart-bar>` description.
+
+Example:
+
+```html
+<cells-chart-bar></cells-chart-bar>
+```
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Custom property | Description     | Default        |
+|:----------------|:----------------|:---------------|
+| --cells-chart-bar  | Mixin applied to :host     | {}  |
+| --cells-fontDefault  | Font family of :host    | sans-serif  |
+
+@customElement
+@polymer
+@demo demo/index.html
+-->
+<dom-module id="cells-chart-bar">
+  <template>
+    <style include="cells-chart-bar-styles cells-chart-bar-shared-styles"></style>
+    <slot></slot>
+    
+    <div id="canvas-holder">
+      <canvas id="myChart"></canvas>
+    </div>
+
+  </template>
+  <script src="cells-chart-bar.js"></script>
+</dom-module>

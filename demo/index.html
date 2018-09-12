@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Demo cells-chart-bar</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../cells-demo-helper/cells-demo-helper.html">
+    <link rel="import" href="../cells-chart-bar.html">
+    <link rel="import" href="css/demo-styles.html">
+  </head>
+  <body unresolved ontouchstart>
+    <cells-demo-helper>
+      <cells-demo-case heading="Basic" description="A basic example">
+        <template>
+          <div>
+            <cells-chart-bar 
+                tipo='doughnut'
+                titulo ='Gastos mensuales'
+                titulos =    '[ "Nafta",  "Comidas",  "Ropa", "Supermercados", "Otros" ]'
+                datos= '[1504.76, 2450.67, 345.12, 900.45, 7500.66]'
+                colores='["rgb(255, 99, 132)", "rgb(255, 159, 64)" , "rgb(255, 205, 86)", "rgb(54, 162, 235)", "rgb(75, 192, 192)"]'
+            ></cells-chart-bar>
+        </div>
+        </template>
+      </cells-demo-case>
+    </cells-demo-helper>
+  </body>
+</html>
